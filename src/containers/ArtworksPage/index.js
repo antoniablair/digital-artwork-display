@@ -1,9 +1,9 @@
-import React from "react";  
+import React from "react";
 import Artworks from "../../components/Artworks";  
 import Query from "../../components/Query";  
 import ARTWORKS_QUERY from "../../queries/artworks/artworks";
 
-const ArtworksWrapper = () => {  
+const ArtworksPage = () => {  
   return (
     <div>
       <div className="uk-section">
@@ -19,4 +19,4 @@ const ArtworksWrapper = () => {
   );
 };
 
-export default ArtworksWrapper;
+export default ArtworksPage;

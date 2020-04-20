@@ -1,15 +1,15 @@
 import gql from "graphql-tag";
 
-export const SLIDESHOWS_QUERY = gql`  
-  query Slideshows {
-    slideshows {
-        id
-        published
-        name
-        creator
-        created_at
-        updated_at
-        artworks {
+export const GET_SLIDESHOWS_QUERY = gql`  
+  query Slideshows($slideshowPublishedStatuses: [Boolean]) {
+    slideshows(where:{published_in:$slideshowPublishedStatuses}) {
+      id
+      published
+      name
+      creator
+      created_at
+      updated_at
+      artworks {
         id
         name
         published
@@ -72,4 +72,4 @@ export const GET_SLIDESHOW_QUERY = gql`
   }
 `;
 
-export default SLIDESHOWS_QUERY;  
+export default GET_SLIDESHOWS_QUERY;  

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Preview from "./preview";
+import SlideshowPreview from "./slideshowPreview";
 
 import "./slideshows.css";
 
@@ -10,7 +10,7 @@ const Slideshows = ({ slideshows }) => {
       <h1>Slideshows</h1>
       <div className="slideshows">
         {slideshows.map((slideshow, i) => {
-          return <Preview slideshow={slideshow} key={`slideshow__${slideshow.id}`} />;
+          return <SlideshowPreview slideshow={slideshow} key={`slideshow__${slideshow.id}`} />;
         })}
       </div>
     </div>

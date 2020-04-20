@@ -6,7 +6,11 @@ import { GET_SLIDESHOW_QUERY } from "../../queries/slideshows/slideshows";
 
 import "./player.css"
 
-const Category = () => {  
+/**
+ * Container for the slideshow player. Fetches a slideshow by id
+ */
+
+const PlayerPage = () => {  
   let { id } = useParams();
 
   return (
@@ -14,8 +18,7 @@ const Category = () => {
       {({ data: { slideshow } }) => {
         return (
           <div className="playerWrapper">
-              {/* todo: add a key */}
-            <Player artworks={slideshow.artworks} />
+            <Player artworks={slideshow.artworks} key={`player__${slideshow.id}`}/>
           </div>
         );
       }}
@@ -23,4 +26,4 @@ const Category = () => {
   );
 };
 
-export default Category; 
+export default PlayerPage; 

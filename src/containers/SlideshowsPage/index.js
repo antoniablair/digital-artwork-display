@@ -1,14 +1,19 @@
 import React from "react";  
 import Slideshows from "../../components/Slideshows";  
 import Query from "../../components/Query";  
-import SLIDESHOWS_QUERY from "../../queries/slideshows/slideshows";
+import GET_SLIDESHOWS_QUERY from "../../queries/slideshows/slideshows";
 
-const SlideshowsWrapper = () => {  
+/**
+ * Fetch slideshows from the server
+ */
+
+const SlideshowsPage = ({ slideshowPublishedStatuses }) => {  
+  console.log(slideshowPublishedStatuses)
   return (
     <div>
       <div className="uk-section">
         <div className="uk-container uk-container-large">
-          <Query query={SLIDESHOWS_QUERY}>
+          <Query query={GET_SLIDESHOWS_QUERY} slideshowPublishedStatuses={slideshowPublishedStatuses}>
             {({ data: { slideshows } }) => {
               return <Slideshows slideshows={slideshows} />;
             }}
@@ -19,4 +24,4 @@ const SlideshowsWrapper = () => {
   );
 };
 
-export default SlideshowsWrapper;
+export default SlideshowsPage;

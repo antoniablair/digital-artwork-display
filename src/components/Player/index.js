@@ -1,16 +1,9 @@
 import React from "react";
 
-import Flickity from "react-flickity-component";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import "./player.css";
-
-// const flickityOptions = {
-//   initialIndex: 2,
-//   autoPlay: 3000,
-//   fullscreen: true
-// }
 
 const Player = ({ artworks }) => {
   return (

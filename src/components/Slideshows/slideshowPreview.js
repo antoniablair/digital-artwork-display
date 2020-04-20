@@ -3,7 +3,15 @@ import React from "react";
 import ImageNotAvailable from "../../assets/noImage.jpg";
 import "./preview.css";
 
-const Preview = ({ slideshow }) => {
+/**
+ * Preview mode for slideshow 
+ * @param {slideshow} Slideshow
+ * 
+ * Todo: Update to show more of the reel
+ */
+
+const SlideshowPreview = ({ slideshow }) => {
+  console.log(slideshow);
   let previewImage = ImageNotAvailable;
   let alt = "No image available";
   const publishedArtworks = slideshow.artworks && slideshow.artworks.filter(a => a.published === true);
@@ -22,11 +30,12 @@ const Preview = ({ slideshow }) => {
     <div className="preview">
       <img
         src={previewImage}
+        alt={alt}
       />
       <p>{slideshow.name || "Untitled"}</p>
     </div>
     );
 };
 
-export default Preview;
+export default SlideshowPreview;
   

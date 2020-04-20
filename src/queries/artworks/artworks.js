@@ -5,6 +5,7 @@ const ARTWORKS_QUERY = gql`
     artworks {
       id
       name
+      published
       media {
         name,
         alternativeText,
