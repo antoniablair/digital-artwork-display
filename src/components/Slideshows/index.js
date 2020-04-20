@@ -4,6 +4,10 @@ import SlideshowPreview from "./slideshowPreview";
 
 import "./slideshows.css";
 
+/**
+ * Slideshow homepage
+ */
+
 const Slideshows = ({ slideshows }) => {
   return (
     <div>

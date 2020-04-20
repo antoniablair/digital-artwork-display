@@ -4,7 +4,7 @@ import Nav from "../../components/Nav";
 import { useLocation } from "react-router-dom";
 
 /**
- * Hide navbar on certain paths. Todo: link up to react router
+ * Hide navbar if on a slideshow route
  */
 
  const NavContainer = () => {

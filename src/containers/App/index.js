@@ -28,7 +28,7 @@ class App extends React.Component {
             slideshowPublishedStatuses={this.state.slideshowsPublishedStatuses} />) } 
             exact />
           <Route path="/instructions" component={Instructions} exact/>
-          <Route path="/slideshow/:id" component={PlayerPage} pathname="slideshow" exact />
+          <Route path="/slideshow/:id" component={PlayerPage} exact />
         </Switch>
       </div>
     );

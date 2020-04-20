@@ -8,7 +8,7 @@ import "./preview.css";
  * Preview mode for slideshow 
  * @param {slideshow} Slideshow
  * 
- * Todo: Update to show more of the reel
+ * Todo: Update to show more of the reel in preview
  */
 
 const SlideshowPreview = ({ slideshow }) => {

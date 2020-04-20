@@ -8,13 +8,15 @@ import "./player.css";
 const Player = ({ artworks }) => {
   return (
     <Carousel
-      autoplay={true}
+      autoPlay={true}
+      interval={200000}
       swipeable={true}
       useKeyboardArrows={true}
       infiniteLoop={true}
       showArrows={false}
       showIndicators={false}
       showThumbs={false}
+      showStatus={false}
     >
       {artworks.map(artwork => (
         <img

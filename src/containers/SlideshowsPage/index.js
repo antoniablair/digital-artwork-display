@@ -4,11 +4,10 @@ import Query from "../../components/Query";
 import GET_SLIDESHOWS_QUERY from "../../queries/slideshows/slideshows";
 
 /**
- * Fetch slideshows from the server
+ * Fetch all slideshows from the server
  */
 
 const SlideshowsPage = ({ slideshowPublishedStatuses }) => {  
-  console.log(slideshowPublishedStatuses)
   return (
     <div>
       <div className="uk-section">

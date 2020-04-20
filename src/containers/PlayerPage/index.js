@@ -7,7 +7,7 @@ import { GET_SLIDESHOW_QUERY } from "../../queries/slideshows/slideshows";
 import "./player.css"
 
 /**
- * Container for the slideshow player. Fetches a slideshow by id
+ * Query container for the slideshow player
  */
 
 const PlayerPage = () => {  
