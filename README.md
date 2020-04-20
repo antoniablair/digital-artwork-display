@@ -1,14 +1,10 @@
-# Digital artwork
+# Digital artwork display
 
 This is a frontend application for displaying GIFs or other images in a digital photo album. 
 
-Suggested use is to run Google Chrome in "kiosk mode" on an iPad or other tablet, 
-and then click on one of the slideshows to launch the slideshow player. The slideshow elements will loop infinitely without displaying the browser. You can then mount the iPad / tablet in a frame on the wall if desired. 
+This app connects to a [Strapi CMS application](https://github.com/antoniablair/strapi-artwork) containing slideshows and artwork. It uses GraphQL endpoints to download the currently published slideshows. 
 
-To exit Kiosk mode on iPad, triple-click the iPad home button, enter your Guided Access passcode and tap End in the top left.
-
-This app connects to a Strapi CMS application using GraphQL endpoints to download
-the currently published slideshows. 
+Suggested use is to run Google Chrome in "kiosk mode" on an iPad or other tablet, and then click on one of the slideshows to launch the slideshow player. The slideshow elements will then run on loop, so you could mount the iPad / tablet for display if desired. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
