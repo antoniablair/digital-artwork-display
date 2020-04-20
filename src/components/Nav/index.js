@@ -2,7 +2,7 @@ import React from "react";
 import Query from "../Query";
 import { Link } from "react-router-dom";
 
-import SLIDESHOWS_QUERY from "../../queries/slideshow/slideshows";
+import SLIDESHOWS_QUERY from "../../queries/slideshows/slideshows";
 
 const Nav = () => {
   return (
@@ -18,10 +18,7 @@ const Nav = () => {
                       <Link to="/">Slideshows</Link>
                     </li>
                     <li>
-                      <Link to="/random">Play Random</Link>
-                    </li>
-                    <li>
-                      <Link to="/about">Instructions</Link>
+                      <Link to="/instructions">Instructions</Link>
                     </li>
                   </ul>
                 </div>

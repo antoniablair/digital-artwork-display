@@ -1,0 +1,18 @@
+.slide {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  background: #000;
+  object-fit: cover;
+  min-width: 100%;
+}
+
+.carousel img {
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.carousel-root, .carousel-slider, .slider-wrapper, ul.slider.animated {
+  height: 100%;
+}

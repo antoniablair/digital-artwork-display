@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 a {  
   text-decoration: none;
 }
@@ -38,4 +42,12 @@ h1 {
 img:hover {  
   opacity: 1;
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
 }

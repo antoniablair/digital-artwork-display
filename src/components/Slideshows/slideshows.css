@@ -1,0 +1,4 @@
+.slideshows {
+  display: flex;
+  justify-content: space-evenly;
+}
