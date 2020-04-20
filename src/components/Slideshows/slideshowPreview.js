@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import ImageNotAvailable from "../../assets/noImage.jpg";
+import { SlideshowPropTypes } from "../../lib/proptypes.js";
+
 import "./preview.css";
 
 /**
@@ -41,5 +43,11 @@ const SlideshowPreview = ({ slideshow }) => {
     );
 };
 
+SlideshowPreview.propTypes = {
+  slideshow: SlideshowPropTypes
+}
+
+
 export default SlideshowPreview;
+
   

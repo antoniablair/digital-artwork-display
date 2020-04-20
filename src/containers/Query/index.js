@@ -1,9 +1,9 @@
 import React from "react";  
 import { useQuery } from "@apollo/react-hooks";
 
-const Query = ({ children, query, id, publishedStatuses }) => {  
+const Query = ({ children, query, id, slideshowPublishedStatus }) => {  
   const { data, loading, error } = useQuery(query, {
-    variables: { id: id, publishedStatuses: publishedStatuses }
+    variables: { id, slideshowPublishedStatus }
   });
 
   if (loading) return <p>Loading...</p>;

@@ -1,7 +1,7 @@
 import React from "react";  
 import { useParams } from "react-router";  
 import Player from "../../components/Player";  
-import Query from "../../components/Query";  
+import Query from "../../containers/Query";  
 import { GET_SLIDESHOW_QUERY } from "../../queries/slideshows/slideshows";
 
 import "./player.css"

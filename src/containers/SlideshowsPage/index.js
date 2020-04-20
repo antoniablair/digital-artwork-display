@@ -1,26 +1,26 @@
 import React from "react";  
 import Slideshows from "../../components/Slideshows";  
-import Query from "../../components/Query";  
+import Query from "../../containers/Query";  
 import GET_SLIDESHOWS_QUERY from "../../queries/slideshows/slideshows";
 
 /**
  * Fetch all slideshows from the server
  */
 
-const SlideshowsPage = ({ slideshowPublishedStatuses }) => {  
+const SlideshowsPage = ({ slideshowPublishedStatus }) => {  
   return (
-    <div>
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">
-          <Query query={GET_SLIDESHOWS_QUERY} slideshowPublishedStatuses={slideshowPublishedStatuses}>
-            {({ data: { slideshows } }) => {
-              return <Slideshows slideshows={slideshows} />;
-            }}
-          </Query>
-        </div>
-      </div>
+      <div className="uk-container uk-container-large">
+        <Query query={GET_SLIDESHOWS_QUERY} slideshowPublishedStatus={slideshowPublishedStatus}>
+          {({ data: { slideshows } }) => {
+            return <Slideshows slideshows={slideshows} />;
+          }}
+        </Query>
     </div>
   );
 };
+
+SlideshowsPage.propTypes = {
+  slideshowPublishedStatus: Boolean
+}
 
 export default SlideshowsPage;

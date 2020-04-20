@@ -14,7 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      slideshowsPublishedStatuses: [true] // can be used to make a toggle
+      slideshowPublishedStatus: true
     };
   }
 
@@ -25,7 +25,7 @@ class App extends React.Component {
         <Switch>
           <Route path="/"
             render={(props) => (<Slideshows {...props}
-            slideshowPublishedStatuses={this.state.slideshowsPublishedStatuses} />) } 
+            slideshowPublishedStatus={this.state.slideshowPublishedStatus} />) } 
             exact />
           <Route path="/instructions" component={Instructions} exact/>
           <Route path="/slideshow/:id" component={PlayerPage} exact />
