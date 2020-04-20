@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Instructions from "../InstructionsPage";
-import Nav from "../../components/Nav";
+import Nav from "../NavContainer";
 import PlayerPage from "../PlayerPage";
 import Slideshows from "../SlideshowsPage";
 
@@ -13,18 +13,10 @@ import Slideshows from "../SlideshowsPage";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { slideshowsPublishedStatuses: [true]};
-    // this.showPublishedStatuses = this.showPublishedStatuses.bind(this);
-    // this.showAllStatuses = this.showAllStatuses.bind(this);
+    this.state = {
+      slideshowsPublishedStatuses: [true] // can be used to make a toggle
+    };
   }
-
-  // showPublishedStatuses = () => (
-  //   this.setState({ slideshowPublishedStatuses: [true] })
-  // )
-
-  // showAllStatuses = () => (
-  //   this.setState({ slideshowPublishedStatuses: [true, false] })
-  // )
 
   render() {
     return (

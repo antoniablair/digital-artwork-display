@@ -1,8 +1,6 @@
 import React from "react";
-import Query from "../Query";
 import { Link } from "react-router-dom";
 
-import SLIDESHOWS_QUERY from "../../queries/slideshows/slideshows";
 
 const Nav = () => {
   return (
@@ -15,6 +13,15 @@ const Nav = () => {
             </li>
             <li>
               <Link to="/instructions">Instructions</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="uk-navbar-right">
+          <ul className="uk-navbar-nav">
+            <li>
+              <a href="mailto:antoniablair@gmail.com">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
