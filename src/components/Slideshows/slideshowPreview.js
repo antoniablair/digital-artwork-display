@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import ImageNotAvailable from "../../assets/noImage.jpg";
 import "./preview.css";
@@ -11,7 +12,6 @@ import "./preview.css";
  */
 
 const SlideshowPreview = ({ slideshow }) => {
-  console.log(slideshow);
   let previewImage = ImageNotAvailable;
   let alt = "No image available";
   const publishedArtworks = slideshow.artworks && slideshow.artworks.filter(a => a.published === true);
@@ -27,13 +27,17 @@ const SlideshowPreview = ({ slideshow }) => {
   } 
 
   return (
-    <div className="preview">
-      <img
-        src={previewImage}
-        alt={alt}
-      />
-      <p>{slideshow.name || "Untitled"}</p>
-    </div>
+    <>
+    <Link to={`/slideshow/${slideshow.id}`}>
+      <div className="preview">
+        <img
+          src={previewImage}
+          alt={alt}
+        />
+        <p>{slideshow.name || "Untitled"}</p>
+      </div>
+      </Link>
+    </>
     );
 };
 

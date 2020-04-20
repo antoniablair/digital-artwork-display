@@ -13,32 +13,30 @@ import Slideshows from "../SlideshowsPage";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { slideshowsPublishedStatuses: [true, false]};
-    this.showPublishedStatuses = this.showPublishedStatuses.bind(this);
-    this.showAllStatuses = this.showAllStatuses.bind(this);
+    this.state = { slideshowsPublishedStatuses: [true]};
+    // this.showPublishedStatuses = this.showPublishedStatuses.bind(this);
+    // this.showAllStatuses = this.showAllStatuses.bind(this);
   }
 
-  showPublishedStatuses = () => (
-    this.setState({ slideshowPublishedStatuses: [true] })
-  )
+  // showPublishedStatuses = () => (
+  //   this.setState({ slideshowPublishedStatuses: [true] })
+  // )
 
-  showAllStatuses = () => (
-    this.setState({ slideshowPublishedStatuses: [true, false] })
-  )
+  // showAllStatuses = () => (
+  //   this.setState({ slideshowPublishedStatuses: [true, false] })
+  // )
 
   render() {
     return (
       <div className="App">
-        <Nav
-          showPublishedStatuses={this.showPublishedStatuses}
-          showAllStatuses={this.showAllStatuses} />
+        <Nav />
         <Switch>
           <Route path="/"
             render={(props) => (<Slideshows {...props}
             slideshowPublishedStatuses={this.state.slideshowsPublishedStatuses} />) } 
             exact />
           <Route path="/instructions" component={Instructions} exact/>
-          <Route path="/slideshow/:id" component={PlayerPage} exact />
+          <Route path="/slideshow/:id" component={PlayerPage} pathname="slideshow" exact />
         </Switch>
       </div>
     );
