@@ -22,8 +22,8 @@ export const SlideshowPropTypes = PropTypes.shape({
         size: PropTypes.number,
         url: PropTypes.string.isRequired,
         previewUrl: PropTypes.string,
-        provider,
-        provider_metadata
+        provider: PropTypes.string,
+        provider_metadata: PropTypes.object
       }))
     }))
 });
