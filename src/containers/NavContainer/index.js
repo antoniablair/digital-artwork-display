@@ -12,7 +12,7 @@ import { useLocation } from "react-router-dom";
    if (location.pathname && location.pathname.includes('slideshow')) {
      return null;
    }
-   return (<><Nav /></>)
+   return (<Nav />)
  }
 
 export default NavContainer;
