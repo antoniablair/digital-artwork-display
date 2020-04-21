@@ -2,9 +2,9 @@
 
 This is a frontend application for displaying GIFs or other images in a digital photo album. 
 
-<img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/sampleGif.gif" width="500">
+<img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/sampleGif.gif" width="250">
 
-<img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/appScreenshot.png" width="500">
+<img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/appScreenshot.png" width="250">
 
 This app connects to a [Strapi CMS application](https://github.com/antoniablair/strapi-artwork) containing slideshows and artwork. It uses GraphQL and Apollo to download the currently published slideshows. 
 
