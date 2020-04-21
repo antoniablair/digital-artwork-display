@@ -32,15 +32,13 @@ export const GET_SLIDESHOWS_QUERY = gql`
   }
 `;
 
-export const GET_SLIDESHOW_QUERY = gql`  
+export const GET_SLIDESHOW_BY_ID_QUERY = gql`  
   query Slideshow($id: ID!) {
     slideshow(id: $id) {
         id
         published
         name
         creator
-        created_at
-        updated_at
         artworks {
         id
         name
@@ -59,9 +57,7 @@ export const GET_SLIDESHOW_QUERY = gql`
           url,
           previewUrl,
           provider,
-          provider_metadata,
-          created_at,
-          updated_at
+          provider_metadata
         }
       }
     }
