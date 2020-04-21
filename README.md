@@ -8,7 +8,7 @@ In this website, users can select a slideshow to launch the slideshow player. Su
 
 <img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/appScreenshot.png" width="250">
 
-This app connects to a [Strapi CMS application](https://github.com/antoniablair/strapi-artwork) to download slideshows and artwork. Strapi is an open source headless CMS. 
+This app connects to a [Strapi CMS application](https://github.com/antoniablair/strapi-artwork) to download slideshows and artwork. Strapi is an open source headless CMS (similar to Prismic) with a built-in admin panel.
 
 <img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/strapiadmin.png" width="500">
 
