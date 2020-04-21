@@ -1,16 +1,16 @@
 # Digital artwork display
 
-This is a frontend application for displaying GIFs or other images in a digital photo album. 
+This is a frontend application for displaying GIFs or other images in a digital photo album. It uses GraphQL and Apollo to download the currently published slideshows. 
 
 <img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/sampleGif.gif" width="250">
 
+In this website, users can select a slideshow to launch the slideshow player. Suggested use is to run from Google Chrome in "kiosk mode" on a small tablet.
+
 <img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/appScreenshot.png" width="250">
 
-This app connects to a [Strapi CMS application](https://github.com/antoniablair/strapi-artwork) containing slideshows and artwork. It uses GraphQL and Apollo to download the currently published slideshows. 
+This app connects to a [Strapi CMS application](https://github.com/antoniablair/strapi-artwork) containing slideshows and artwork. Strapi is an open source headless CMS, similar to Prismic. 
 
 <img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/strapiadmin.png" width="500">
-
-Suggested use is to run Google Chrome in "kiosk mode" on a small tablet, and then click on one of the slideshows to launch the slideshow player. The slideshow elements will then run on loop, so you could mount the iPad / tablet for display if desired. 
 
 ---
 
