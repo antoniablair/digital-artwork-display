@@ -1,6 +1,6 @@
 # Digital artwork display
 
-This is a frontend application for displaying GIFs or other images in a digital photo album. It uses GraphQL and Apollo to download slideshows from a CMS API. 
+Turn your old ipad or phone into digital artwork! This is a frontend application for displaying GIFs or other images in a digital photo album. It uses GraphQL and Apollo to download slideshows from a CMS API. 
 
 <img src="https://github.com/antoniablair/digital-artwork-display/blob/master/src/assets/sampleGif.gif" width="250">
 
